@@ -1,7 +1,6 @@
-<h1>Wikinimous</h1>
-
 <ul>
   <% @articles.each do |article| %>
     <li><%= link_to article.title, article %></li>
+    <p><%= article.content.length > 50 ? "#{article.content.split('.')[0..5].join('.')}..." : article.content %></p>
   <% end %>
 </ul>
