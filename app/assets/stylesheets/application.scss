@@ -1,14 +1,53 @@
 @import "bootstrap/scss/bootstrap";
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+
+body {
+  font-family: 'Open Sans';
+}
+
+#article_content {
+  height: 400px;
+}
 
 .navbar {
   background: #F8F8F8;
-}
+  margin-bottom: 20px;
+  border-bottom: 1px solid #E7E7E7;
 
-.navbar a {
+  a {
   text-decoration: none;
   color: #777;
+  }
+
+  a:hover {
+  color: #5E5E5D;
+  }
 }
 
-.navbar a:hover {
-  color: #5E5E5D;
+.container {
+  width: 500px;
+
+  a:hover {
+  text-decoration: none;
+  }
+
+  ul {
+  padding-left: 0;
+  list-style-type: none;
+  }
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 16px;
+  align-items: flex-end;
+
+  h2 {
+    margin: 0;
+  }
+}
+
+.article-controls a {
+  margin-left: 4px;
 }
