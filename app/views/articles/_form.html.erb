@@ -1,0 +1,8 @@
+<%= simple_form_for(@article) do |a| %>
+  <strong><%= a.input :title %></strong>
+  <strong><%= a.input :content%></strong>
+  <%= a.submit %>
+<% end %>
+
+<hr>
+<%= link_to "Back", article %>

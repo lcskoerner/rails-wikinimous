@@ -2,8 +2,12 @@
   <div class="header">
     <h2><%= @article.title %></h2>
     <div class="article-controls">
-      <%= link_to "Edit", edit_article_path %>
-      <%= link_to "Destroy", article_path(@article), method: :delete, data: { confirm: "Delete #{@article.title}?"} %>
+      <%= link_to edit_article_path do %>
+        <i class="fas fa-pencil-alt"></i>
+      <% end %>
+      <%= link_to article_path(@article), method: :delete, data: { confirm: "Delete #{@article.title}?" } do %>
+        <i class="far fa-trash-alt"></i>
+      <% end %>
     </div>
   </div>
   <hr>
